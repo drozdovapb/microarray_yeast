@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<jnlp spec="1.0+" codebase="https://analysis.ingenuity.com/pa">
+    <information>
+        <title>IPA</title>
+        <vendor>Ingenuity Systems, Inc.</vendor>
+        <homepage href="https://analysis.ingenuity.com/pa"/>
+        <description>PathwayViewer</description>
+        <description kind="short">IPA</description>
+        <icon href="/pa/images/ipa.gif"/>
+        <icon kind="splash" href="/pa/images/splash-screen.jpg"/>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.4+" href="http://java.sun.com/products/autodl/j2se" java-vm-args="-Xms40m -Xmx500m"/>
+        <jar href="public/ipa.jar"/>
+        <jar href="public/commonThird.jar"/>
+        <jar href="public/appThird1.jar"/>
+        <jar href="public/appThird2.jar"/>
+        <property name="java.net.preferIPv4Stack" value="true" />
+	
+
+	<property name="javaws.webstart.shortcut.title" value="IPA" />
+
+	<property name="javaws.com.ingenuity.app.abbreviation" value="IPA" />
+
+	<property name="javaws.com.ingenuity.aboutbox.header" value="about_header.jpg" />
+
+	<property name="javaws.com.ingenuity.visualization.enable_hierarchical_pathways" value="false" />
+
+	<property name="javaws.com.ingenuity.quickstart.image" value="quick_start_no_blue_links.gif" />
+
+	<property name="javaws.com.ingenuity.ipacommon.answers_url" value="https://answers.ingenuity.com/answers" />
+
+	<property name="javaws.com.ingenuity.reportview.reportsurl.domain" value="https://reports.ingenuity.com" />
+
+	<property name="javaws.com.ingenuity.reportview.reportsurl.contextroot" value="rs" />
+
+	<property name="javaws.com.ingenuity.ipacommon.isa_url" value="https://apps.ingenuity.com/isa" />
+
+	<property name="javaws.com.ingenuity.car_url" value="http://uedev5.ingenuity.com:8164/anaweb/car/anawebController" />
+
+	<property name="java.util.Arrays.useLegacyMergeSort" value="true" />
+
+	<property name="javaws.com.ingenuity.ipa.effectoverlay.enable" value="false" />
+
+	<property name="javaws.com.ingenuity.ipa.mechanisticnetwork.enable" value="false" />
+
+    </resources>
+    <security>
+        <all-permissions/>
+    </security>
+    <application-desc main-class="com.ingenuity.ipa.explorer.ui.IpaApplication">
+
+		<argument>-d</argument>
+
+		<argument>-j</argument>
+
+		<argument>ipipaapp1.ingenuity.com_8118~FEBD3C742E5000E372B1F2673FB12304.ipipaapp1</argument>
+
+    </application-desc>
+</jnlp>

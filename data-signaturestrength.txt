@@ -1,0 +1,4 @@
+	signature.strength
+plus_min	-10.1917451109163
+del_min	-0.803144913403934
+plus_del	-0.408452614905678
